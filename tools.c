@@ -5,7 +5,7 @@
 void sieve ( int size, char *numbers )
 {
 	for (int i = 3; i * i <= size; i+=2) {
-		if ( numbers[i] != 0)
+		if ( numbers[i] != 0 )
 			for(int j = i * i; j <= size; j += i )
 				numbers[j] = 0;
 	}
@@ -55,7 +55,7 @@ int num_scan( void )
 	do
 	{
 		proof = scanf("%d", &num);
-		if(proof == 1) break;
+		if(1 == proof) break;
 		printf("Incorrect input, enter int\n");
 		fflush(stdin);
 	}

@@ -25,7 +25,7 @@ $(TARGET): $(DEPS)
 	$(CC) $(CFLAGS) -c $<
 
 clean:
-	rm -rf *.o *.i *.s $(TARGET)
+	rm -rf *.o *.i *.s $(TARGET) Primes.txt
 
 install:
 	
